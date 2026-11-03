@@ -99,7 +99,7 @@ export default function EditorHeader() {
 
         <a
           className="oss sm"
-          href="https://github.com/makemycv/makemycv.git"
+          href="https://github.com/stackforgenepal/StackForgeCV.git"
           target="_blank"
           rel="noopener noreferrer"
         >
