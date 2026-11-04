@@ -16,7 +16,7 @@ export default function EditorPage() {
       title: 'CV Editor | StackForge CV',
       description: 'Edit and customize your CV with StackForge CV.',
       path: '/editor',
-      robots: 'noindex, nofollow'
+      robots: 'index, follow'
     })
     document.body.classList.add('ed')
     return () => {
