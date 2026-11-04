@@ -43,7 +43,6 @@ export default function EditorHeader() {
         <Link to="/" className="brand" aria-label="StackForge CV home">
           <img src="/logo.png" alt="StackForge" className="brand-logo" />
         </Link>
-        <span className="live sm">Live</span>
       </div>
 
       {/* Middle: Template picker trigger */}
