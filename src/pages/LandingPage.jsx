@@ -707,6 +707,7 @@ export default function LandingPage() {
         <a href="https://twelve.tools" target="_blank"><img src="https://twelve.tools/badge1-light.svg" alt="Featured on Twelve Tools" width="148" height="40">
         <img src="https://twelve.tools/badge0-dark.svg" alt="Featured on Twelve Tools" width="200" height="54" style="height:32px;width:auto" loading="lazy" decoding="async">
         </a>
+        <a href="https://twelve.tools" target="_blank"><img src="https://twelve.tools/badge2-dark.svg" alt="Featured on Twelve Tools" width="148" height="40">twelveTools</a>
 
         <div>
           <Link to="/templates/">Templates</Link>
