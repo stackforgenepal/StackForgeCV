@@ -704,7 +704,7 @@ export default function LandingPage() {
         </Link>
 
         <span>Free online CV builder and practical CV resources.</span>
-        <span><a href="https://twelve.tools" target="_blank" rel="noopener noreferrer" class="opacity-70 hover:opacity-100 transition-opacity"><img src="https://twelve.tools/badge0-dark.svg" alt="Featured on Twelve Tools" width="200" height="54" style="height:32px;width:auto" loading="lazy" decoding="async"></a></span>
+        <a href="https://twelve.tools" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity"><img src="https://twelve.tools/badge0-dark.svg" alt="Featured on Twelve Tools" width="200" height="54" style={{ height: '32px', width: 'auto' }} loading="lazy" decoding="async" /></a>
 
         <div>
           <Link to="/templates/">Templates</Link>
