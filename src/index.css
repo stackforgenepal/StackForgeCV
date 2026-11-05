@@ -2062,3 +2062,756 @@ body.ed #root {
     padding-top: 12px;
   }
 }
+/* =========================================
+   STACKFORGE CV — NEW HOMEPAGE SECTIONS
+   These styles are namespaced to avoid
+   changing the existing landing page design.
+========================================= */
+
+.home-section {
+  width: min(1160px, calc(100% - 48px));
+  margin: clamp(64px, 8vw, 108px) auto;
+  scroll-margin-top: 90px;
+}
+
+.home-section-heading {
+  max-width: 720px;
+  margin: 0 auto 36px;
+  text-align: center;
+}
+
+.home-eyebrow {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #5369ef;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.home-section-heading h2 {
+  margin: 0;
+  font-size: clamp(26px, 3.2vw, 38px);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.18;
+}
+
+.home-section-heading > p {
+  max-width: 620px;
+  margin: 13px auto 0;
+  color: var(--muted, #717b8b);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+/* =========================================
+   HOW IT WORKS
+========================================= */
+
+.home-how-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.home-step-card {
+  position: relative;
+  min-width: 0;
+  padding: 28px;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, currentColor 11%, transparent);
+  border-radius: 18px;
+  background: color-mix(in srgb, currentColor 3%, transparent);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.home-step-card:hover {
+  transform: translateY(-4px);
+  border-color: color-mix(in srgb, #5369ef 42%, transparent);
+}
+
+.home-step-number {
+  position: absolute;
+  top: 20px;
+  right: 22px;
+  color: color-mix(in srgb, currentColor 28%, transparent);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.home-step-symbol {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 24px;
+  place-items: center;
+  border: 1px solid color-mix(in srgb, #5369ef 25%, transparent);
+  border-radius: 14px;
+  background: color-mix(in srgb, #5369ef 10%, transparent);
+  color: #5369ef;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.home-step-card h3 {
+  margin: 0 0 9px;
+  font-size: 18px;
+  font-weight: 750;
+}
+
+.home-step-card p {
+  margin: 0;
+  color: var(--muted, #717b8b);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+/* =========================================
+   CV CUSTOMIZATION SECTION
+========================================= */
+
+.home-editor-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.95fr;
+  gap: 42px;
+  align-items: center;
+}
+
+.home-editor-copy {
+  display: grid;
+  gap: 25px;
+}
+
+.home-editor-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.home-feature-marker {
+  display: grid;
+  flex: 0 0 43px;
+  width: 43px;
+  height: 43px;
+  place-items: center;
+  border: 1px solid color-mix(in srgb, #5369ef 25%, transparent);
+  border-radius: 12px;
+  background: color-mix(in srgb, #5369ef 9%, transparent);
+  color: #5369ef;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.home-editor-feature h3 {
+  margin: 1px 0 6px;
+  font-size: 16px;
+  font-weight: 750;
+}
+
+.home-editor-feature p {
+  margin: 0;
+  color: var(--muted, #717b8b);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* Decorative editor panel */
+
+.home-control-panel {
+  min-width: 0;
+  padding: 25px;
+  border: 1px solid color-mix(in srgb, currentColor 12%, transparent);
+  border-radius: 20px;
+  background: color-mix(in srgb, currentColor 3.5%, transparent);
+  box-shadow: 0 18px 50px rgba(20, 35, 70, 0.07);
+}
+
+.home-control-panel-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.home-control-kicker {
+  color: var(--muted, #717b8b);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.home-control-panel-top h3 {
+  margin: 5px 0 0;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.home-live-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 10px;
+  border: 1px solid color-mix(in srgb, #16a36a 25%, transparent);
+  border-radius: 99px;
+  color: #15945f;
+  font-size: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.home-live-indicator > span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #18ae70;
+  box-shadow: 0 0 0 3px rgba(24, 174, 112, 0.12);
+}
+
+.home-control-group {
+  min-width: 0;
+  margin-bottom: 19px;
+}
+
+.home-control-label {
+  display: block;
+  margin-bottom: 9px;
+  color: var(--muted, #717b8b);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.home-font-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.home-font-option,
+.home-control-options > span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+  padding: 6px 10px;
+  border: 1px solid color-mix(in srgb, currentColor 12%, transparent);
+  border-radius: 8px;
+  color: inherit;
+  font-size: 11px;
+  line-height: 1.3;
+}
+
+.home-font-option.active,
+.home-control-options > span.active {
+  border-color: color-mix(in srgb, #5369ef 48%, transparent);
+  background: color-mix(in srgb, #5369ef 10%, transparent);
+  color: #5369ef;
+  font-weight: 750;
+}
+
+.home-size-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 210px;
+  min-height: 38px;
+  padding: 0 10px;
+  border: 1px solid color-mix(in srgb, currentColor 13%, transparent);
+  border-radius: 9px;
+}
+
+.home-size-control span {
+  color: var(--muted, #717b8b);
+  font-size: 17px;
+}
+
+.home-size-control strong {
+  font-size: 13px;
+}
+
+.home-control-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.home-control-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding-top: 17px;
+  border-top: 1px solid color-mix(in srgb, currentColor 10%, transparent);
+}
+
+.home-control-bottom .home-control-group {
+  margin: 0;
+}
+
+.home-color-options {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.home-color-dot {
+  display: block;
+  width: 19px;
+  height: 19px;
+  border: 2px solid color-mix(in srgb, currentColor 10%, transparent);
+  border-radius: 50%;
+}
+
+.home-color-dot.blue {
+  background: #2f4bff;
+}
+
+.home-color-dot.violet {
+  background: #8057df;
+}
+
+.home-color-dot.teal {
+  background: #159c9c;
+}
+
+.home-color-dot.red {
+  background: #dc5d65;
+}
+
+.home-color-dot.dark {
+  background: #303744;
+}
+
+.home-fit-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 11px;
+  font-weight: 650;
+}
+
+.home-fit-check {
+  display: grid;
+  width: 17px;
+  height: 17px;
+  place-items: center;
+  border: 1px solid #5369ef;
+  border-radius: 5px;
+  background: #5369ef;
+  color: white;
+  font-size: 11px;
+}
+
+.home-control-note {
+  margin: 18px 0 0;
+  color: var(--muted, #717b8b);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+/* =========================================
+   EXPORT FORMATS
+========================================= */
+
+.home-export-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 13px;
+}
+
+.home-export-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid color-mix(in srgb, currentColor 11%, transparent);
+  border-radius: 15px;
+  background: color-mix(in srgb, currentColor 3%, transparent);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.home-export-card:hover {
+  transform: translateY(-3px);
+  border-color: color-mix(in srgb, #5369ef 40%, transparent);
+}
+
+.home-export-file {
+  display: grid;
+  flex: 0 0 45px;
+  width: 45px;
+  height: 49px;
+  place-items: center;
+  border: 1px solid color-mix(in srgb, #5369ef 28%, transparent);
+  border-radius: 9px;
+  background: color-mix(in srgb, #5369ef 9%, transparent);
+  color: #5369ef;
+  font-size: 10px;
+  font-weight: 850;
+}
+
+.home-export-card h3 {
+  margin: 1px 0 5px;
+  font-size: 14px;
+  font-weight: 750;
+}
+
+.home-export-card p {
+  margin: 0;
+  color: var(--muted, #717b8b);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.home-export-note {
+  margin: 23px 0 0;
+  color: var(--muted, #717b8b);
+  font-size: 13px;
+  font-weight: 650;
+  text-align: center;
+}
+
+/* =========================================
+   WHO CAN USE STACKFORGE CV
+========================================= */
+
+.home-audience-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.home-audience-card {
+  padding: 22px;
+  border: 1px solid color-mix(in srgb, currentColor 11%, transparent);
+  border-radius: 15px;
+  background: color-mix(in srgb, currentColor 3%, transparent);
+}
+
+.home-audience-index {
+  display: inline-block;
+  margin-bottom: 19px;
+  color: #5369ef;
+  font-size: 11px;
+  font-weight: 850;
+  letter-spacing: 0.1em;
+}
+
+.home-audience-card h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 750;
+}
+
+.home-audience-card p {
+  margin: 0;
+  color: var(--muted, #717b8b);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/* =========================================
+   WHY CHOOSE STACKFORGE CV
+========================================= */
+
+.home-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px 25px;
+}
+
+.home-benefit {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.home-benefit-check {
+  display: grid;
+  flex: 0 0 23px;
+  width: 23px;
+  height: 23px;
+  place-items: center;
+  border-radius: 50%;
+  background: color-mix(in srgb, #16a36a 12%, transparent);
+  color: #15945f;
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.home-benefit h3 {
+  margin: 1px 0 5px;
+  font-size: 14px;
+  font-weight: 750;
+}
+
+.home-benefit p {
+  margin: 0;
+  color: var(--muted, #717b8b);
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+/* =========================================
+   FAQ ACCORDION
+========================================= */
+
+.home-faq-list {
+  width: min(820px, 100%);
+  margin: 0 auto;
+  border-top: 1px solid color-mix(in srgb, currentColor 12%, transparent);
+}
+
+.home-faq-item {
+  border-bottom: 1px solid color-mix(in srgb, currentColor 12%, transparent);
+}
+
+.home-faq-item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 19px 3px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  list-style: none;
+}
+
+.home-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.home-faq-toggle {
+  display: grid;
+  flex: 0 0 27px;
+  width: 27px;
+  height: 27px;
+  place-items: center;
+  border: 1px solid color-mix(in srgb, currentColor 15%, transparent);
+  border-radius: 50%;
+  color: #5369ef;
+  font-size: 18px;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+}
+
+.home-faq-item[open] .home-faq-toggle {
+  transform: rotate(45deg);
+}
+
+.home-faq-item summary:focus-visible {
+  outline: 2px solid #5369ef;
+  outline-offset: 4px;
+  border-radius: 5px;
+}
+
+.home-faq-answer {
+  padding: 0 40px 18px 3px;
+}
+
+.home-faq-answer p {
+  margin: 0;
+  color: var(--muted, #717b8b);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* =========================================
+   FINAL CALL TO ACTION
+========================================= */
+
+.home-final-cta {
+  width: min(1160px, calc(100% - 48px));
+  margin: 80px auto;
+  padding: clamp(38px, 6vw, 70px) 25px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 23px;
+  background:
+    radial-gradient(
+      circle at 85% 15%,
+      rgba(255, 255, 255, 0.17),
+      transparent 32%
+    ),
+    linear-gradient(125deg, #263edb, #5369ef 58%, #7462ed);
+  color: #ffffff;
+  text-align: center;
+}
+
+.home-final-cta-content {
+  max-width: 660px;
+  margin: 0 auto;
+}
+
+.home-final-cta .home-eyebrow {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.home-final-cta h2 {
+  margin: 0;
+  font-size: clamp(27px, 4vw, 43px);
+  font-weight: 850;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+}
+
+.home-final-cta p {
+  max-width: 540px;
+  margin: 15px auto 25px;
+  color: rgba(255, 255, 255, 0.83);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.home-final-cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 46px;
+  padding: 0 21px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  background: #ffffff;
+  color: #263edb;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.home-final-cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(10, 20, 70, 0.2);
+}
+
+.home-final-cta-button:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 4px;
+}
+
+/* =========================================
+   RESPONSIVE LAYOUT
+========================================= */
+
+@media (max-width: 950px) {
+  .home-editor-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .home-control-panel {
+    width: 100%;
+  }
+
+  .home-export-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .home-audience-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .home-benefits-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
+  .home-section {
+    width: calc(100% - 32px);
+    margin: 62px auto;
+  }
+
+  .home-section-heading {
+    margin-bottom: 26px;
+    text-align: left;
+  }
+
+  .home-section-heading > p {
+    margin-left: 0;
+  }
+
+  .home-how-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .home-step-card {
+    padding: 23px;
+  }
+
+  .home-editor-grid {
+    gap: 27px;
+  }
+
+  .home-control-panel {
+    padding: 19px;
+  }
+
+  .home-control-panel-top {
+    align-items: flex-start;
+  }
+
+  .home-live-indicator {
+    font-size: 9px;
+  }
+
+  .home-export-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-export-card {
+    padding: 15px;
+  }
+
+  .home-audience-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .home-audience-card {
+    padding: 17px;
+  }
+
+  .home-benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .home-faq-item summary {
+    font-size: 13px;
+  }
+
+  .home-final-cta {
+    width: calc(100% - 32px);
+    margin: 60px auto;
+    padding: 40px 22px;
+    border-radius: 18px;
+  }
+}
+
+@media (max-width: 390px) {
+  .home-audience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-control-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .home-control-panel-top {
+    flex-direction: column;
+  }
+}
