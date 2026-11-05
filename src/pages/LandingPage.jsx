@@ -709,6 +709,7 @@ export default function LandingPage() {
         <a href="https://findly.tools/stackforgecv?utm_source=stackforgecv" target="_blank" rel="noopener noreferrer">
   <img src="https://findly.tools/badges/findly-tools-badge-light.svg" alt="Featured on Findly.tools" width="175" height="55" />
 </a>
+          <a href="https://fazier.com" target="_blank"><img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=featured&theme=light" width=250 alt="Fazier badge" /></a>
 
         <div>
           <Link to="/templates/">Templates</Link>
