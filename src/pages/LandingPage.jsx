@@ -705,6 +705,7 @@ export default function LandingPage() {
 
         <span>Free online CV builder and practical CV resources.</span>
         <a href="https://twelve.tools" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity"><img src="https://twelve.tools/badge0-dark.svg" alt="Featured on Twelve Tools" width="200" height="54" style={{ height: '32px', width: 'auto' }} loading="lazy" decoding="async" /></a>
+        <a href="https://startupfa.me/s/stackforge-cv?utm_source=stackforge.cv" target="_blank"><img src="https://startupfa.me/badges/featured-badge.webp" alt="StackForge CV - Featured on Startup Fame" width="171" height="54" /></a>
 
         <div>
           <Link to="/templates/">Templates</Link>
