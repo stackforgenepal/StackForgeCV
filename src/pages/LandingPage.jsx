@@ -704,6 +704,7 @@ export default function LandingPage() {
         </Link>
 
         <span>Free online CV builder and practical CV resources.</span>
+        <a href="https://twelve.tools" target="_blank"><img src="https://twelve.tools/badge1-light.svg" alt="Featured on Twelve Tools" width="148" height="40"></a>
 
         <div>
           <Link to="/templates/">Templates</Link>
